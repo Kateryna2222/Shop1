@@ -1,0 +1,135 @@
+.busket{
+    color: rgb(0, 116, 199);
+    font-size: 24px;
+}
+
+
+.busket, .busket-overlay{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 100;
+} 
+
+.busket-overlay{
+    background-color: rgba(49, 49, 49, 0.5);
+}
+
+.busket-wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    padding-left: 50px;
+    border: 5px solid rgb(98, 178, 235);
+    border-radius: 20px;
+    background-color: rgb(231, 243, 245);
+    max-width: 1200px;
+    width: 100%;
+}
+
+
+.buskete-closeBtn{
+    background-color: transparent;
+    position: absolute;
+    right: 10px;
+}
+
+
+
+.busket-empthy{
+    text-align: center;
+    height: 500px;
+    padding-top: 200px;
+}
+
+/* busket goods */
+.busket h3{
+    text-align: center;
+    padding-top: 30px;
+    font-size: 30px;
+    font-weight: 700;
+    padding-bottom: 30px;
+}
+.busket-inner{
+    display: flex;
+    flex-direction: column;
+    min-height: 500px;
+}
+
+.busket-list-titles {
+    display: flex;
+    justify-content: space-around;
+}
+.busket-list-titles > h4{
+    border-bottom: 2px solid rgb(0, 116, 199);
+    padding: 0 40px;
+}
+.total-price {
+    text-align: right;
+    padding: 20px 50px 20px;
+}
+
+.busket-items{
+    flex-grow: 1;
+}
+
+
+/* busket cards*/
+.busket-items{
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0;
+    gap: 40px;
+    margin-right: 80px;
+}
+
+.busket-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.busket-list-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    max-width: 350px;
+    width: 350px;
+}
+
+.busket-img{
+    width: auto;
+    height: 100px;
+}
+
+.busket-title{
+    font-size: 16px;
+}
+
+.busket-count{
+    outline: 2px solid rgb(0, 116, 199);
+    border-radius: 10%;
+    color: rgb(0, 116, 199);
+    padding: 10px;
+    width: 60px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 150px;
+}
+
+.busket-btn{
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    background-color: rgb(243, 71, 71);
+    color: #fff;
+    border-radius: 5px;
+}
+
+
+.busket-open{
+    background-color: transparent;
+}

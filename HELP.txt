@@ -1,0 +1,7 @@
+npm i redux-thunk
+
+export const store = createStore(rootReducer, applyMiddleware(thunk))
+
+
+// input number min=1, but still possible make it 0 from keyboard if erase all
+const value = Math.max(1, payload.value);
